@@ -22,7 +22,7 @@
     (println (format "[main] Connected. Channel id: %d" (.getChannelNumber ch)))
     (lq/declare ch qname {:exclusive false :auto-delete true})
     (lc/subscribe ch qname message-handler {:auto-ack true})
-    (lb/publish ch default-exchange-name qname "Hello!" {:content-type "text/plain" :type "greetings.hi"})
+    (lb/publish ch default-exchange-name qname "Hello World!" {:content-type "text/plain" :type "testing.of.rabbitMQ"})
     (Thread/sleep 2000)
     (println "[main] Disconnecting...")
     (rmq/close ch)
