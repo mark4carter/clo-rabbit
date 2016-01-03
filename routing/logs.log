@@ -1,0 +1,5 @@
+(warning error)
+ [x] Waiting for logs. To exit press CTRL+C
+ [x] warning:test
+ [x] error:teeest
+Terminate batch job (Y/N)? 
